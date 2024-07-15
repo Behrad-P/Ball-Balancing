@@ -26,20 +26,23 @@ The goal of this project is to balance a ball on a flat surface using two servo 
 
 ## Installation and Setup
 
-1. **Install OpenCV:**:
+1. **Install OpenCV**:
 Download and extract the precompiled OpenCV for MinGW from this GitHub repository (https://github.com/huihut/OpenCV-MinGW-Build).
 
-2. **Install CMake:**:
+2. **Install CMake**:
 Download and install CMake from the official CMake website (https://cmake.org/).
 
-3. **Install MinGW-w64:**:
+3. **Install MinGW-w64**:
 Download and install MinGW-w64 (POSIX) from this SourceForge link. (https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/6.3.0/threads-posix/)
 
 ## Project structure
+![ps](https://github.com/user-attachments/assets/16645eb5-9b92-4063-bb74-7c3b07371299)![ps2](https://github.com/user-attachments/assets/22c4b8fa-06f9-4765-8c72-28c10f178790)
 
-<img project2="https://github.com/user-attachments/assets/427589c1-9eaf-458f-a142-ae29b9b1dabf.jpg" width="480" height="480"><img project="https://github.com/user-attachments/assets/63b82bd5-38b7-464e-bf20-8cf4f8ba79fb.jpg" width="480" height="480">
+
 ## Ball detection
+![ball](https://github.com/user-attachments/assets/3d657f55-0166-4e96-9cff-9180044594ac)![ball_filter](https://github.com/user-attachments/assets/ee0f5538-a02a-493e-bf05-520c17d33831)
 
-![orig](https://github.com/user-attachments/assets/5ae995db-4af5-4779-9de7-65ceeb15ba22)![filter](https://github.com/user-attachments/assets/b293d803-3b8e-4460-ba18-8e73060aa2eb)
+
+
 
 
