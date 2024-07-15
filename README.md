@@ -36,11 +36,12 @@ Download and install CMake from the official CMake website (https://cmake.org/).
 Download and install MinGW-w64 (POSIX) from this SourceForge link. (https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/6.3.0/threads-posix/)
 
 ## Project structure
-![ps](https://github.com/user-attachments/assets/16645eb5-9b92-4063-bb74-7c3b07371299)![ps2](https://github.com/user-attachments/assets/fbf7a0c8-26b1-427a-b2ab-46cb95c791c2)
-
+![ps](https://github.com/user-attachments/assets/269644d7-e116-4aa7-a799-87e0ce2bca8a)![ps2](https://github.com/user-attachments/assets/4c3f5f28-40c5-44af-8938-3f0c315bc82f)
 
 ## Ball detection
-![ball](https://github.com/user-attachments/assets/3d657f55-0166-4e96-9cff-9180044594ac)![ball_filter](https://github.com/user-attachments/assets/ee0f5538-a02a-493e-bf05-520c17d33831)
+![ball](https://github.com/user-attachments/assets/9b82f47a-2514-43f9-956d-18883ae39505)![ball_filter](https://github.com/user-attachments/assets/3c6ad8d7-4965-4f65-8dfd-14b1b4aabdab)
+
+
 
 
 
