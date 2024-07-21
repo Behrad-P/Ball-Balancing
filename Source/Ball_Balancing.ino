@@ -8,7 +8,7 @@
  * @note    An external power supply is required to power the servo motors
  **
  * @connections   pin_9 => x-axis servo motor, pin_10 => y-axis servo motor 
- *                PIN_4 => up-right LED, PIN_5 => up-left LED, PIN_6 => down-right LED, PIN_7 => down-left LED,
+ *                PIN_4 => top-right LED, PIN_5 => top-left LED, PIN_6 => bottom-right LED, PIN_7 => bottom-left LED,
 */
 
 #include <Servo.h>
@@ -181,10 +181,6 @@ void ledIdleBlink(int blinkDelay)
     else
       PORTD = 0x00;
 }
-
-
-
-
 
 
 
