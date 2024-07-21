@@ -4,7 +4,7 @@ This project demonstrates a ball-balancing system utilizing image processing and
 
 ## Project Overview
 
-The goal of this project is to balance a ball on a flat surface using two servo motors. The webcam captures the position of the ball, and a PID controller adjusts the servos to keep the ball centered.
+The goal of this project is to balance a ball on a flat surface using two servo motors. A webcam records the ball's position and a PID controller adjusts the servos to keep the ball at the setpoint.
 
 ## Components
 
@@ -40,6 +40,9 @@ Download and install MinGW-w64 (POSIX) from this SourceForge link. (https://sour
 
 ## Ball detection
 ![ball](https://github.com/user-attachments/assets/9b82f47a-2514-43f9-956d-18883ae39505)![ball_filter](https://github.com/user-attachments/assets/3c6ad8d7-4965-4f65-8dfd-14b1b4aabdab)
+
+## connection diagram
+![schematic](https://github.com/user-attachments/assets/9e725738-0989-4037-a3de-5b0f4e5c95c5)
 
 
 
