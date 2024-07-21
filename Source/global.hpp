@@ -4,6 +4,8 @@
  * @email   behradp32@gmail.com
  * @ide     Visual Studio Code
  * @brief   global (.hpp) 
+ **
+ * @note    Replace the Buttons.jpg directory before running the program. Line 55
 */
 
 #ifndef __GLOBAL_HPP__
@@ -31,7 +33,7 @@ constexpr float RESPONSE_MAX = {60};
 constexpr float RESPONSE_MIN = {-60};
 float kp = {3};
 float ki = {0.02};
-float kd = {40};
+float kd = {45};
 float sp;
 pidController* ballBalacingX = new pidController(kp, ki, kd, calSpCoor(0), RESPONSE_MIN, RESPONSE_MAX);      // Controller initialization
 pidController* ballBalacingY = new pidController(kp, ki, kd, calSpCoor(1), RESPONSE_MIN, RESPONSE_MAX);      // Controller initialization
@@ -50,7 +52,7 @@ constexpr int X_RANGE[2] = {80, 560};     // 480 Pixels
 constexpr uint8_t OBJ_DET_TIMEOUT = {5};      // Camera fps = 30  =>  OBJ_DET_TIMEOUT * 33.3 = timeout
 const vector<Rect> RECTS = {Rect(192, 217, 96, 46), Rect(352, 23, 96, 46), Rect(32, 28, 96, 46),
                                          Rect(352, 405, 96, 46), Rect(32, 407, 96, 46)};   // BR, BL
-const Mat BUTTONS_IMG = imread("E:/OpenCV C++/projects/Ball_Balacing/Buttons.jpg");
+const Mat BUTTONS_IMG = imread("E:/OpenCV C++/projects/Ball_Balacing/Buttons.jpg");    // Replace the Buttons.jpg directory here
 Mat HIGHLIGHTED;
 const string BUTTONS_WINDOW_NAME = "Buttons Window";
 int hsvLowerColor[3] = {30, 40, 125};
