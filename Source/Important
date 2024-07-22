@@ -1,0 +1,26 @@
+
+// ******* All important tips are written in this file. Please read them carefully before running the program.  ******* //
+                          
+// ==================================================================================================================== //
+
+/***
+1. Due to operating system optimization, at least one of the image processing windows should be open when the program is running.
+   Otherwise, it is possible to decrease the fps.
+
+/***
+2. After running the program, the user must enter the 'usbstart' command in the terminal to start the USB communication.
+   To disable the USB communication, the 'usbstop' command must be entered.
+   This allows the user to first ensure the correctness of the HSV values before the controller and servo motors come into action.
+
+/***
+3. If the servo motor rotation is not correct, you can multiply the response by -1, as shown in line 174. (in main.cpp)
+
+/***
+4. Replace the Buttons.jpg directory before running the program. Line 55. (in global.hpp)
+
+/***
+5. An external power supply is required to power the servo motors
+
+// ==================================================================================================================== //
+
+More details and guidance are written in the relevant file.
