@@ -37,6 +37,7 @@ Download and install MinGW-w64 (POSIX) from this SourceForge link. (https://sour
 
 ## Project structure
 ![ps](https://github.com/user-attachments/assets/269644d7-e116-4aa7-a799-87e0ce2bca8a)![ps2](https://github.com/user-attachments/assets/4c3f5f28-40c5-44af-8938-3f0c315bc82f)
+![bb1](https://github.com/user-attachments/assets/5458ca47-0e99-4500-a6f6-2bbf25067694)![bb2](https://github.com/user-attachments/assets/29a9635d-4bc4-43ae-a4cc-8dc05b6a1d71)
 
 ## Ball detection
 ![ball](https://github.com/user-attachments/assets/9b82f47a-2514-43f9-956d-18883ae39505)![ball_filter](https://github.com/user-attachments/assets/3c6ad8d7-4965-4f65-8dfd-14b1b4aabdab)
