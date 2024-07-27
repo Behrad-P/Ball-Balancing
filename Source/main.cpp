@@ -43,7 +43,7 @@ bool imageProcessing()
     uint8_t count = 0;
 
     if(BUTTONS_IMG.empty())
-        cout << endl << ERR_MSGS[GUI];
+        cerr << endl << ERR_MSGS[GUI];
     else
     {
         HIGHLIGHTED = BUTTONS_IMG.clone();
@@ -65,7 +65,7 @@ bool imageProcessing()
 
     if(v.isOpened() == false)
     {
-        cout << endl << ERR_MSGS[CAMERA];
+        cerr << endl << ERR_MSGS[CAMERA];
         cout << endl << MSGS[IMG_PROC_TER];
 
         return FAILED;
@@ -82,7 +82,7 @@ bool imageProcessing()
 
         if(frame.empty())
         {
-            cout << endl << ERR_MSGS[FRAME];
+            cerr << endl << ERR_MSGS[FRAME];
             cout << endl << MSGS[IMG_PROC_TER];
 
             return FAILED;
@@ -155,7 +155,7 @@ bool usbCommunication()
 
     if(!(usbInit(PORT, BAUDRATE)))
     {
-        cout << endl << ERR_MSGS[USB];        
+        cerr << endl << ERR_MSGS[USB];        
         cout << endl << MSGS[USB_COMM_TER];
 
         return FAILED;
@@ -195,7 +195,7 @@ bool usbCommunication()
 
         if(!(usbTx(usbTxBuff, usbTxBuff.length())))
         {
-            cout << endl << ERR_MSGS[TRANSMIT];        
+            cerr << endl << ERR_MSGS[TRANSMIT];        
             cout << endl << MSGS[USB_COMM_TER];
             cout << endl << MSGS[GET_CMD];
 
@@ -204,7 +204,7 @@ bool usbCommunication()
 
         if(!(usbRx(usbRxBuff))) 
         {
-            cout << endl << ERR_MSGS[RECEIVE];        
+            cerr << endl << ERR_MSGS[RECEIVE];        
             cout << endl << MSGS[USB_COMM_TER];
             cout << endl << MSGS[GET_CMD];
 
@@ -218,7 +218,7 @@ bool usbCommunication()
             cout << endl << MSGS[ARD_ERR] << usbRxBuff << endl;
 
             if(isTerminalBusy)
-                cout << ERR_MSGS[TERMINAL_1];
+                cerr << ERR_MSGS[TERMINAL_1];
             
             lock_guard<mutex> lock(mtx);
             
@@ -274,28 +274,28 @@ int main()
 
         if(isTerminalBusy)
         {
-            cout << ERR_MSGS[TERMINAL_0] << endl;
+            cerr << ERR_MSGS[TERMINAL_0] << endl;
             cout << "=> " << MSGS[ASK2CONTINUE];
         }
         else
         {    
             cout << MSGS[GET_CMD];
             isTerminalBusy = true;
-            cin >> userCmd;
-
+            getline(cin, userCmd, '\n');
+            
             isCmdValid = true;
             if(userCmd == COMMAND_LIST[PID])
             {
                 try
                 {
                     cout << MSGS[GET_P];
-                    cin >> userCmd;
+                    getline(cin, userCmd, '\n');
                     kp = stof(userCmd);
                     cout << MSGS[GET_I];
-                    cin >> userCmd;
+                    getline(cin, userCmd, '\n');
                     ki = stof(userCmd);
                     cout << MSGS[GET_D];
-                    cin >> userCmd;
+                    getline(cin, userCmd, '\n');
                     kd = stof(userCmd);
                 }
                 catch(...)
@@ -320,7 +320,7 @@ int main()
             if(isCmdValid)
                 cout << MSGS[ACK] << endl;
             else
-                cout << ERR_MSGS[COMMAND] << endl;
+                cerr << ERR_MSGS[COMMAND] << endl;
 
             isTerminalBusy = false;
         }  
