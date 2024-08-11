@@ -3,7 +3,7 @@
  * @author  Behrad Pourhadi
  * @email   behradp32@gmail.com
  * @ide     Visual Studio Code
- * @brief   controller (.hpp) 
+ * @file    controller (.hpp) 
 */
 
 #ifndef __CONTROLLER_HPP__
