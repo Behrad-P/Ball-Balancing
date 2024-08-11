@@ -3,7 +3,7 @@
  * @author  Behrad Pourhadi
  * @email   behradp32@gmail.com
  * @ide     Visual Studio Code
- * @brief   usb (.hpp) 
+ * @file    usb (.hpp) 
 */
 
 #ifndef __USB_HPP__
