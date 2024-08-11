@@ -3,7 +3,7 @@
  * @author  Behrad Pourhadi
  * @email   behradp32@gmail.com
  * @ide     Visual Studio Code
- * @brief   global (.hpp) 
+ * @file    global (.hpp) 
  **
  * @note    Replace the Buttons.jpg directory before running the program. Line 55
 */
