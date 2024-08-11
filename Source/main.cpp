@@ -3,7 +3,7 @@
  * @author  Behrad Pourhadi
  * @email   behradp32@gmail.com
  * @ide     Visual Studio Code
- * @brief   main (.cpp) 
+ * @file    main (.cpp) 
  **
  * @note    After running the program, the user must enter the 'usbstart' command in the terminal to start the USB communication.
  *          To disable the USB communication, the 'usbstop' command must be entered.
