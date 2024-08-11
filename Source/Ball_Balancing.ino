@@ -3,7 +3,7 @@
  * @author  Behrad Pourhadi
  * @email   behradp32@gmail.com
  * @ide     Arduino IDE (2.1.0)
- * @brief   Ball_Balancing (.ino) 
+ * @file    Ball_Balancing (.ino) 
  **
  * @note    An external power supply is required to power the servo motors
  **
